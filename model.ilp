@@ -1,0 +1,13 @@
+\ Model Flights3_copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ 1('FGRHH',_490,_80,_'CDG',_'LHR',_50,_100,_[],_0): - DepFGRHH + ArrFGRHH
+   = 80
+ 1('FGRHH',_790,_175,_'CDG',_'RBA',_50,_100,_[],_0): - DepFGRHH + ArrFGRHH
+   = 175
+Bounds
+ DepFGRHH free
+ ArrFGRHH free
+End
